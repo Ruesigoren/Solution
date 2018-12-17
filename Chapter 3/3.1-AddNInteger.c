@@ -20,8 +20,7 @@ main()
 	printf("Please input the number N = ");
 	n = GetInteger();
 	printf("Please input %d numbers\n", n);
-	for (i = 0; i < n; i++)
-	{
+	for (i = 0; i < n; i++) {
 		printf(" ? ");
 		value = GetInteger();
 		total += value;

@@ -21,8 +21,7 @@ main()
 	n = GetInteger();
 	sum = 0;
 	//for (i = 0; i < 5; i++)
-	for (i = 0; i < n; i++)
-	{
+	for (i = 0; i < n; i++) {
 		printf("? ");
 		value = GetInteger();
 		sum += value;

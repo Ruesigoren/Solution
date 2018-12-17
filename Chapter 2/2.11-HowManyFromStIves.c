@@ -9,7 +9,7 @@
  *   Kits, cats, sacks, and wives,
  *   How many were going to St.Ives?
  * This program finds out how many representatives of the assembled
- * multitude¡ªkits, cats, sacks, and wives¡ªwere coming form St.Ives
+ * multitude - kits, cats, sacks, and wives - were coming form St.Ives
  */
 
 #include <stdio.h>
