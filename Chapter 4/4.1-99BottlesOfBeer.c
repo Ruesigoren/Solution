@@ -1,5 +1,5 @@
 /*
- * Filename£º4.1-99BottlesOfBeer.c
+ * File: 4.1-99BottlesOfBeer.c
  * -------------------------------
  * This program generate the lyrics of the song <99 bottles of beer>
  */
