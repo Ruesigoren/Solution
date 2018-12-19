@@ -1,5 +1,5 @@
 /*
- * File: 5.8-IsPerfectSquare.c
+ * File: 5.9-IsPerfectSquare.c
  * ---------------------------
  * This Program determines wheather a integer is a perfect square number of not.
  */
