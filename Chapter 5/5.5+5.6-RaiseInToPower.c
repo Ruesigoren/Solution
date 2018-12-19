@@ -23,14 +23,14 @@ main()
 	}
 	printf("\n");
 	printf("This Program gets float-point number n and integer k, and show n to k power in a list.\n");
-	printf("         k\n");
-	printf(" k     10\n");
-	printf("-----------\n");
+	printf("            k\n");
+	printf(" k         10\n");
+	printf("----------------\n");
 	for (k = -4; k < 0; k++) {
-		printf("%d   %g\n", k, RaiseRealToPower(10, k));
+		printf("%d        %-g\n", k, RaiseRealToPower(10, k));
 	}
 	for (k = 0; k <= 4; k++) {
-		printf(" %d   %.1f\n", k, RaiseRealToPower(10, k));
+		printf(" %d  %7.1f\n", k, RaiseRealToPower(10, k));
 	}
 }
 
