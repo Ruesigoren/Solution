@@ -9,11 +9,17 @@
 #include "genlib.h"
 #include "simpio.h"
 
+/* constants */
+
 #define Epsilon 0.0000000001
+
+/* funtion prototypes */
 
 boolean ApproximatelyEqual(double x, double y);
 double CubeRoot(double x);
 void TestCubeRoot(double x);
+
+/* main program */
 
 main()
 {

@@ -8,37 +8,43 @@
 #include <stdio.h>
 #include "genlib.h"
 
+/* function prototypes */
+
 void MoveForward(void);
 void TurnRight(void);
 void TurnLeft(void);
 boolean IfFacingWall(void);
 boolean IfOutSide(void);
-void FineTheRightWall(void);
+void FindTheRightWall(void);
+
+/* main program */
 
 main()
 {
 	FineTheRightWall();
 	while (!IfOutSide()) {
-		TurnRight();
-		while (IfFacingWall()) {  //keep hand on the right wall
-			TurnLeft();
+		TurnRight();				//turn right to confirm hand on the right wall
+		while (IfFacingWall()) {	//confirmed£¬turn left
+			TurnLeft();				//if facing wall, keep turning left to find a way
 		}
 		MoveForward();
 	}
 }
 
-void FineTheRightWall(void)
+void FindTheRightWall(void)
 {
 	int count;
 
-	for (count = 0; count < 4; count++) {  //look around to find the wall on right hand
+	for (count = 0; count < 4; count++) {  //look around to find the wall on the right hand
 		if (!IfFacingWall()) {
-			TurnLeft();
+			TurnRight();
 		}
-		else
+		else {
+			TurnLeft();
 			break;
+		}
 	}
-	if (count == 4) {  //if not, turn right and move forward until facing wall
+	if (count == 4) {	//if not, now is in original position, turn right and move forward until facing wall
 		TurnRight();
 		while (!IfOutSide()) {
 			if (IfFacingWall()) {
@@ -50,7 +56,6 @@ void FineTheRightWall(void)
 		}
 	}
 }
-
 
 void MoveForward(void)
 {

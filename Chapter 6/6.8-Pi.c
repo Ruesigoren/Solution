@@ -1,7 +1,8 @@
 /*
  * Fine: 6.8-Pi.c
  * --------------
- * This program computes approximations of the mathematical constant ¦Ð.
+ * This program computes approximations of the mathematical constant ¦Ð
+ * by using a converged series.
  */
 
 #include <stdio.h>
@@ -23,6 +24,6 @@ main()
 		part3 *= 0.25;
 		term = part1 * part2 * part3;
 	}
-	sum *= 6.0;
+	sum *= 6;
 	printf("Pi = %.10f\n", sum);
 }

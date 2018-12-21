@@ -6,32 +6,18 @@
 
 #include <stdio.h>
 
-int Pow(int x, int y);
+/* main program */
 
 main()
 {
 	int i;
-	double term = 0.0;
+	double sum = 0.0, term;
 
-	for (i = 0; i < 10000; i++)
-	{
-		term += Pow(-1, i) / (2 * i + 1.0);
+	for (i = 0; i < 10000; i++) {
+		term = 1 / (2 * i + 1.0);
+		if (i % 2) term *= -1;
+		sum += term;
 	}
-	term *= 4;
-	printf("Pi = %g\n", term);
-}
-
-int Pow(int x, int y)
-{
-	int i, result = 1;
-
-	if (y == 1) {
-		result = x;
-	}
-	if (y > 1) {
-		for (i = 0; i < y; i++) {
-			result *= x;
-		}
-	}
-	return result;
+	sum *= 4;
+	printf("Pi = %g\n", sum);
 }

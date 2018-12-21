@@ -12,7 +12,9 @@ main()
 	int integer, i;
 
 	i = 2;
-	printf("Enter number to be factored: ");
+	printf("Enter number to be factored.\n");
+	printf("The number must greater than 1.\n");
+	printf("? ");
 	integer = GetInteger();
 	while (integer > 1) {
 		if (integer % i == 0) {

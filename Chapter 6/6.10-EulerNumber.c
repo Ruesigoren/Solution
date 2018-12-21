@@ -6,15 +6,20 @@
 
 #include <stdio.h>
 
+/* function prototypes */
+
 int Factorial(int n);
+
+/* main program */
 
 main()
 {
 	double term, sum;
+	int i;
 
 	sum = 0;
-	term = 1;
-	for (int i = 1; sum != sum + term; i++) {
+	term = 1.0;
+	for (i = 1; sum != sum + term; i++) {
 		sum += term;
 		term *= 1.0 / i;
 		//term = 1.0 / Factorial(i);    //overflow
