@@ -22,11 +22,11 @@
 main()
 {
 	int i, r;
-
-    printf("On this computer, RAND_MAX = %d.\n", RAND_MAX);
-    printf("Here are the results of %d calls to rand:\n", NTrials);
-    for (i = 0; i < NTrials; i++) {
-        r = rand();
-        printf("%10d\n", r);
-    }
+	
+	printf("On this computer, RAND_MAX = %d.\n", RAND_MAX);
+	printf("Here are the results of %d calls to rand:\n", NTrials);
+	for (i = 0; i < NTrials; i++) {
+		r = rand();
+		printf("%10d\n", r);
+	}
 }
