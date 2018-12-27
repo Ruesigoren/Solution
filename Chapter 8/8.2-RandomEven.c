@@ -5,7 +5,7 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+
 #include "random.h"
 
 /*
@@ -40,7 +40,7 @@ int RandomEven(int low, int high)
 	double d;
 
 	d = (double)rand() / ((double)RAND_MAX + 1);
-	k = (int)(d * (high - low + 1) / 2);
+	k = (int)(d * (high - low + 1));
 	j = low + k;
 	return j % 2 + j;
 }
