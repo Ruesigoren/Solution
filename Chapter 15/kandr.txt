@@ -1,0 +1,4 @@
+According to the table on page 53 of *The C
+Programming Language* by Kernighhan and Ritchie,
+the operator * has a *higher* precedence than +,
+and the precedence of * is equal to that of /.
